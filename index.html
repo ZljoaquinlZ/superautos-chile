@@ -8,47 +8,57 @@
 
 <style>
 body{
-font-family:Arial,sans-serif;
-max-width:700px;
-margin:auto;
-padding:20px;
-background:#f5f5f5;
+    font-family: Arial, sans-serif;
+    background:#f3f4f6;
+    margin:0;
+    padding:20px;
 }
 
 .contenedor{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+    max-width:500px;
+    width:95%;
+    margin:40px auto;
+    background:#ffffff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.12);
 }
 
 h2{
-text-align:center;
+    text-align:center;
+    margin-bottom:25px;
 }
 
-input,select{
-width:100%;
-padding:12px;
-margin-top:5px;
-margin-bottom:15px;
-border:1px solid #ccc;
-border-radius:6px;
-box-sizing:border-box;
+label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:5px;
+}
+
+input, select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    box-sizing:border-box;
+    font-size:15px;
 }
 
 button{
-width:100%;
-background:#25D366;
-color:white;
-border:none;
-padding:15px;
-font-size:18px;
-border-radius:8px;
-cursor:pointer;
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#25D366;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
 }
 
 button:hover{
-opacity:.9;
+    opacity:0.9;
 }
 </style>
 
@@ -57,7 +67,7 @@ opacity:.9;
 
 <div class="contenedor">
 
-<h2>🚗 Vende tu Auto</h2>
+<h2>🚗 Cotiza tu Vehículo</h2>
 
 <label>Patente del auto</label>
 <input type="text" id="patente" placeholder="Ej: ABCD12">
@@ -77,31 +87,117 @@ opacity:.9;
 <option>2017</option>
 <option>2016</option>
 <option>2015</option>
+<option>2014</option>
+<option>2013</option>
+<option>2012</option>
+<option>2011</option>
+<option>2010</option>
+<option>2009</option>
+<option>2008</option>
+<option>2007</option>
+<option>2006</option>
+<option>2005</option>
+<option>2004</option>
+<option>2003</option>
+<option>2002</option>
+<option>2001</option>
+<option>2000</option>
 </select>
 
 <label>Marca</label>
 <select id="marca">
 <option value="">Selecciona una marca</option>
-<option>Toyota</option>
-<option>Chevrolet</option>
-<option>Hyundai</option>
-<option>Kia</option>
-<option>Mazda</option>
-<option>Nissan</option>
-<option>Suzuki</option>
-<option>Volkswagen</option>
-<option>BMW</option>
-<option>Mercedes-Benz</option>
+<option>Abarth</option>
+<option>Acura</option>
+<option>Alfa Romeo</option>
+<option>Aston Martin</option>
 <option>Audi</option>
-<option>Jeep</option>
-<option>Peugeot</option>
-<option>Renault</option>
-<option>Subaru</option>
-<option>MG</option>
+<option>BAIC</option>
+<option>Bentley</option>
+<option>BMW</option>
+<option>Brilliance</option>
+<option>Bugatti</option>
+<option>Buick</option>
+<option>BYD</option>
+<option>Cadillac</option>
+<option>Changan</option>
 <option>Chery</option>
-<option>Lamborghini</option>
+<option>Chevrolet</option>
+<option>Chrysler</option>
+<option>Citroën</option>
+<option>Cupra</option>
+<option>Dacia</option>
+<option>Daihatsu</option>
+<option>Dodge</option>
+<option>DS</option>
+<option>FAW</option>
 <option>Ferrari</option>
+<option>Fiat</option>
+<option>Ford</option>
+<option>Foton</option>
+<option>Geely</option>
+<option>Genesis</option>
+<option>GMC</option>
+<option>Great Wall</option>
+<option>GWM</option>
+<option>Haval</option>
+<option>Honda</option>
+<option>Hummer</option>
+<option>Hyundai</option>
+<option>Infiniti</option>
+<option>Isuzu</option>
+<option>Iveco</option>
+<option>JAC</option>
+<option>Jaecoo</option>
+<option>Jaguar</option>
+<option>Jeep</option>
+<option>Jetour</option>
+<option>Kia</option>
+<option>Koenigsegg</option>
+<option>Lada</option>
+<option>Lamborghini</option>
+<option>Lancia</option>
+<option>Land Rover</option>
+<option>Lexus</option>
+<option>Lincoln</option>
+<option>Lotus</option>
+<option>Maserati</option>
+<option>Maxus</option>
+<option>Maybach</option>
+<option>Mazda</option>
+<option>McLaren</option>
+<option>Mercedes-Benz</option>
+<option>MG</option>
+<option>MINI</option>
+<option>Mitsubishi</option>
+<option>Morgan</option>
+<option>Nissan</option>
+<option>Omoda</option>
+<option>Opel</option>
+<option>Pagani</option>
+<option>Peugeot</option>
+<option>Plymouth</option>
+<option>Polestar</option>
+<option>Pontiac</option>
 <option>Porsche</option>
+<option>RAM</option>
+<option>Renault</option>
+<option>Rolls-Royce</option>
+<option>Rover</option>
+<option>Saab</option>
+<option>Seat</option>
+<option>Skoda</option>
+<option>Smart</option>
+<option>SsangYong</option>
+<option>Subaru</option>
+<option>Suzuki</option>
+<option>Tata</option>
+<option>Tesla</option>
+<option>Toyota</option>
+<option>Volkswagen</option>
+<option>Volvo</option>
+<option>XPeng</option>
+<option>Zotye</option>
 </select>
 
 <label>Modelo</label>
@@ -114,7 +210,7 @@ opacity:.9;
 <input type="text" id="kms" placeholder="Ej: 45.000">
 
 <button onclick="enviarWhatsApp()">
-Cotizar mi Vehículo
+🚀 Cotizar mi Vehículo
 </button>
 
 </div>
@@ -122,25 +218,25 @@ Cotizar mi Vehículo
 <script>
 function enviarWhatsApp(){
 
-let patente=document.getElementById('patente').value;
-let anio=document.getElementById('anio').value;
-let marca=document.getElementById('marca').value;
-let modelo=document.getElementById('modelo').value;
-let version=document.getElementById('version').value;
-let kms=document.getElementById('kms').value;
+let patente = document.getElementById("patente").value;
+let anio = document.getElementById("anio").value;
+let marca = document.getElementById("marca").value;
+let modelo = document.getElementById("modelo").value;
+let version = document.getElementById("version").value;
+let kms = document.getElementById("kms").value;
 
-let mensaje=
+let mensaje =
 `Hola SUPERAUTOS CHILE, quiero vender mi auto.
 
-Patente: ${patente}
-Año: ${anio}
-Marca: ${marca}
-Modelo: ${modelo}
-Versión: ${version}
-Kilometraje: ${kms}`;
+🚗 Patente: ${patente}
+📅 Año: ${anio}
+🏷️ Marca: ${marca}
+🚘 Modelo: ${modelo}
+⭐ Versión: ${version}
+🛣️ Kilometraje: ${kms}`;
 
 window.open(
-'https://api.whatsapp.com/send?phone=56928492239&text='+
+'https://api.whatsapp.com/send?phone=56928492239&text=' +
 encodeURIComponent(mensaje),
 '_blank'
 );
