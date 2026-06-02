@@ -1,37 +1,153 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SUPERAUTOS CHILE</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:700px;
+margin:auto;
+padding:20px;
+background:#f5f5f5;
+}
+
+.contenedor{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+h2{
+text-align:center;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin-top:5px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:6px;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+background:#25D366;
+color:white;
+border:none;
+padding:15px;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:.9;
+}
+</style>
+
 </head>
 <body>
 
-<h2>🚗 Cotiza tu Vehículo</h2>
+<div class="contenedor">
 
-<input type="text" placeholder="Patente"><br><br>
+<h2>🚗 Vende tu Auto</h2>
 
-<select>
-<option>Selecciona Año</option>
+<label>Patente del auto</label>
+<input type="text" id="patente" placeholder="Ej: ABCD12">
+
+<label>Año</label>
+<select id="anio">
+<option value="">Selecciona el año</option>
 <option>2026</option>
 <option>2025</option>
 <option>2024</option>
+<option>2023</option>
+<option>2022</option>
+<option>2021</option>
+<option>2020</option>
+<option>2019</option>
+<option>2018</option>
+<option>2017</option>
+<option>2016</option>
+<option>2015</option>
 </select>
 
-<br><br>
-
-<select>
+<label>Marca</label>
+<select id="marca">
+<option value="">Selecciona una marca</option>
 <option>Toyota</option>
 <option>Chevrolet</option>
 <option>Hyundai</option>
 <option>Kia</option>
 <option>Mazda</option>
+<option>Nissan</option>
+<option>Suzuki</option>
+<option>Volkswagen</option>
+<option>BMW</option>
+<option>Mercedes-Benz</option>
+<option>Audi</option>
+<option>Jeep</option>
+<option>Peugeot</option>
+<option>Renault</option>
+<option>Subaru</option>
+<option>MG</option>
+<option>Chery</option>
+<option>Lamborghini</option>
+<option>Ferrari</option>
+<option>Porsche</option>
 </select>
 
-<br><br>
+<label>Modelo</label>
+<input type="text" id="modelo" placeholder="Ej: Hilux, Yaris, CX-5">
 
-<a href="https://api.whatsapp.com/send/?phone=56928492239&text=Hola+SUPERAUTOS+CHILE%2C+quiero+vender+mi+auto">
-Cotizar por WhatsApp
-</a>
+<label>Versión</label>
+<input type="text" id="version" placeholder="Ej: Full, Limited, 2.0 AT">
+
+<label>Kilometraje aproximado</label>
+<input type="text" id="kms" placeholder="Ej: 45.000">
+
+<button onclick="enviarWhatsApp()">
+Cotizar mi Vehículo
+</button>
+
+</div>
+
+<script>
+function enviarWhatsApp(){
+
+let patente=document.getElementById('patente').value;
+let anio=document.getElementById('anio').value;
+let marca=document.getElementById('marca').value;
+let modelo=document.getElementById('modelo').value;
+let version=document.getElementById('version').value;
+let kms=document.getElementById('kms').value;
+
+let mensaje=
+`Hola SUPERAUTOS CHILE, quiero vender mi auto.
+
+Patente: ${patente}
+Año: ${anio}
+Marca: ${marca}
+Modelo: ${modelo}
+Versión: ${version}
+Kilometraje: ${kms}`;
+
+window.open(
+'https://api.whatsapp.com/send?phone=56928492239&text='+
+encodeURIComponent(mensaje),
+'_blank'
+);
+
+}
+</script>
 
 </body>
 </html>
+```
